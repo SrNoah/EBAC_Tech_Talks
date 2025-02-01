@@ -8,18 +8,71 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="/src/images/ebac_logo.svg" alt="EBAC">
             <p class="hero__text">
-                O maior evento de tecnologia do Brasil começa em 10d 12h 30m 10s
+                O maior evento de tecnologia do Brasil começa em <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Allianz Parque - Barra Funda - São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de R$120,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando?</b>
+                        10/05/2025 às 19hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">Garanta sua vaga</a>
+            </div>
         </div>
     </header>
-
-
+    <section class="event event--front-end">
+        <div class="container"  data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Front-End</h2>
+                <p class="event__details__text">O desenvolvimento front-end da web é o desenvolvimento da interface gráfica do usuário de um site por meio do uso de HTML , CSS e JavaScript para que os usuários possam visualizar e interagir com esse site.</p>
+            </div>
+            <img class="event__image" src="/src/images/frontend.png" alt="Front-end">
+        </div>
+    </section>
+    <section class="event event--back-end event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Back-End</h2>
+                <p class="event__details__text">Back-end é a parte interna de uma aplicação, que é responsável por gerenciar a funcionalidade geral do site ou aplicativo. É o que acontece nos bastidores, sem que o usuário veja. </p>
+            </div>
+            <img class="event__image" src="/src/images/backend.png" alt="Back-end">
+        </div>
+    </section>
+    <section class="event event--ux-ui">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">UX - UI</h2>
+                <p class="event__details__text">UX e UI são áreas do design que se referem à experiência do usuário (UX) e à interface do usuário (UI). O objetivo é criar produtos que proporcionem a melhor experiência possível para o usuário.</p>
+            </div>
+            <img class="event__image" src="/src/images/ui-ux.png" alt="ux-ui">
+        </div>
+    </section>
+    <section class="event event--data-science event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Data Science</h2>
+                <p class="event__details__text">Data science, ou ciência de dados, é a área de estudo que analisa dados para obter informações úteis para os negócios. É uma abordagem multidisciplinar que combina matemática, estatística, inteligência artificial e engenharia da computação.</p>
+            </div>
+            <img class="event__image" src="/src/images/data.png" alt="Data-science">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="/src/scripts/main.js"></script>
 </body>
 </html>
